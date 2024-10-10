@@ -2,27 +2,24 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import AdminPanel from './AdminPanel'
+import LoginForm from './LoginForm'
 
 
-const user = {
-  name: 'Hedy Lamarr',
-  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-  imageSize: 90,
-}
 
 function Profile() {
+  let content;
+  let isLoggesIn = false;
 
+  if (isLoggesIn) {
+    content = <AdminPanel />;
+  } else {
+    content = <LoginForm />;
+  }
+      
   return (
     <>
-      <h1>{user.name}</h1>
-      <img className = "avatar"
-      src = {user.imageUrl}
-      alt = {'Photo of ' + user.name}
-      style = {{
-        width: user.imageSize,
-        height: user.imageSize
-      }}
-      />
+      {content}
     </>
   )
 }
