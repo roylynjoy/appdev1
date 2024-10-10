@@ -1,21 +1,32 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import AdminPanel from './AdminPanel'
-import LoginForm from './LoginForm'
+import { useState } from 'react';
 
 function MyButton() {
+  const [count, setCount] = useState(0);
+
   function handleClick() {
-    alert('You clicked me!');
+    setCount(count + 1);
   }
 
   return (
     <button onClick={handleClick}>
-      Click me
+      Clicked {count} times
     </button>
   );
 }
 
-export default MyButton
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Counters that update separately</h1>
+      <MyButton />
+      <MyButton />
+    </div>
+  );
+}
+
+
+
 
