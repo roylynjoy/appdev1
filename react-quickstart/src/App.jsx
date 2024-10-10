@@ -7,6 +7,7 @@ import './App.css'
 function AboutPage() {
   return(
     <>
+      <img className='avatar' src='https://i.imgur.com/yXOvdOSs.jpg'/>
       <h1>About</h1>
       <p>Hello there.<br />How do you do?</p>
     </>
