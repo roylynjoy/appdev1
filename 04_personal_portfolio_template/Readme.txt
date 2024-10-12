@@ -1,6 +1,6 @@
-Thanks for downloading this template!
+Thanks for downloading this theme!
 
-Template Name: Kelly
-Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+Theme Name: DevFolio
+Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
 Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Author URL: https://bootstrapmade.com
